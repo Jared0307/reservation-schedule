@@ -31,26 +31,26 @@ Bienvenido a **Reserva de Horas**, una sencilla pero potente aplicación web con
    git clone https://github.com/tu_usuario/reserva-de-horas.git
    ```
 2. **Instala las dependencias**:
-```bash
-pip install flask flask_sqlalchemy flask_login sqlalchemy flask_mail
-```
+   ```bash
+   pip install flask flask_sqlalchemy flask_login sqlalchemy flask_mail
+   ```
 3. **Ejecuta la aplicación**: Para correr la aplicación en tu máquina, solo necesitas ejecutar el siguiente comando (con privilegios de administrador si es necesario):
-```bash
-python app.py
-```
+   ```bash
+   python app.py
+   ```
 La aplicación estará disponible en http://127.0.0.1:5000.
 
 ## Estructura de Archivos 📁
-```bash
-/Reserva-de-Horas
-│
-├── /templates               # Archivos HTML para las vistas
-├── /static                  # Archivos estáticos como CSS, JS, imágenes
-├── app.py                   # Archivo principal para iniciar la app
-├── models.py                # Definición de la base de datos
-├── requirements.txt         # Librerías necesarias para el proyecto
-└── README.md                # Documentación del proyecto
-```
+   ```bash
+   /Reserva-de-Horas
+   │
+   ├── /templates               # Archivos HTML para las vistas
+   ├── /static                  # Archivos estáticos como CSS, JS, imágenes
+   ├── app.py                   # Archivo principal para iniciar la app
+   ├── models.py                # Definición de la base de datos
+   ├── requirements.txt         # Librerías necesarias para el proyecto
+   └── README.md                # Documentación del proyecto
+   ```
 
 ## Contribuciones ✍️
 Si deseas contribuir a este proyecto, siéntete libre de realizar un fork y enviar tus pull requests. Todas las sugerencias y mejoras son bienvenidas.
