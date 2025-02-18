@@ -19,7 +19,6 @@ Bienvenido a **Reserva de Horas**, una sencilla pero potente aplicación web con
 
 - **Flask**: Framework principal para desarrollar la aplicación.
 - **SQLAlchemy**: ORM utilizado para la gestión de la base de datos.
-- **Bootstrap**: Para una interfaz de usuario moderna y responsive.
 - **Correo Electrónico (SMTP)**: Para el envío de alertas y notificaciones.
 
 ---
@@ -44,11 +43,10 @@ La aplicación estará disponible en http://127.0.0.1:5000.
    ```bash
    /Reserva-de-Horas
    │
+   ├── /instance                # Base de datos SQLite
    ├── /templates               # Archivos HTML para las vistas
    ├── /static                  # Archivos estáticos como CSS, JS, imágenes
    ├── app.py                   # Archivo principal para iniciar la app
-   ├── models.py                # Definición de la base de datos
-   ├── requirements.txt         # Librerías necesarias para el proyecto
    └── README.md                # Documentación del proyecto
    ```
 
