@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<head><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Reservas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<body style="margin: 0; font-family: Arial, sans-serif;">
+    <div class="navbar"
+        style="display: flex; justify-content: space-between; align-items: center; background-color: black; padding: 15px 30px; color: white; border-bottom: 2px solid red;">
+        <a href="{{ url_for('about') }}"
+            style="color: white; font-size: 1.2rem; font-weight: bold; padding: 10px; transition: color 0.3s;">About</a>
+        <a href="{{ url_for('logout') }}"
+            style="color: white; font-size: 1.2rem; font-weight: bold; padding: 10px; transition: color 0.3s;">Cerrar
+            sesión</a>
+    </div>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    <div class="content-wrapper" style="display: flex; justify-content: space-between; margin: 20px; padding: 30px;">
+
+        <div class="calendar-container" style="flex-grow: 1; padding-right: 20px;">
+            <h1 style="font-size: 2.5rem; color: black; text-align: center; margin-bottom: 20px;">Calendario de Reservas
+            </h1>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+            <div class="month-navigation" style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+                <button id="prev-month"
+                    style="background-color: red; color: white; font-size: 1.2rem; padding: 12px 25px; border-radius: 8px; cursor: pointer;">Anterior</button>
+                <button id="next-month"
+                    style="background-color: red; color: white; font-size: 1.2rem; padding: 12px 25px; border-radius: 8px; cursor: pointer;">Siguiente</button>
+            </div>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+            <div id="calendar" style="display: flex; justify-content: center;"></div>
+        </div>
+
+        <div id="sidebar"
+            style="background-color: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 0 15px rgba(0, 0, 0, 0.1); width: 300px;">
+            <h3 style="font-size: 1.5rem; color: black; margin-bottom: 15px;">Hora seleccionada</h3>
+            <div id="selected-time" style="font-size: 1.2rem; color: #555; margin-bottom: 20px;">Hora seleccionada: 8:00
+            </div>
+            <button id="reserve-btn"
+                style="background-color: red; color: white; font-size: 1.2rem; padding: 14px 30px; border: none; border-radius: 8px; cursor: pointer; width: 100%; max-width: 250px; transition: background-color 0.3s; margin-top: 10px;"
+                disabled>Reservar</button>
+
+            <div id="available-hours-container" style="margin-top: 20px;">
+            </div>
+
+            <h3 style="font-size: 1.5rem; color: black; margin-top: 40px;">Reservas Aprobadas</h3>
+            <div id="approved-reservations">
+            </div>
+        </div>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    </div>
+
+    <footer
+        style="background-color: black; color: white; text-align: center; padding: 10px; position: relative; width: 100%; bottom: 0;">
+        <p>© 2025 Sistema de Gestión de Reservas</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='js/calendar.js') }}"></script>
+</body>
+
+</html><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->

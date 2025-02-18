@@ -1,0 +1,126 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.navbar {
+    background-color: #333;
+    padding: 10px 20px;
+    text-align: right;
+}
+
+.navbar-link {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.navbar-link:hover {
+    color: #f39c12;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.admin-header h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.admin-header p {
+    color: #555;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.flash-messages {
+    margin-bottom: 20px;
+}
+
+.flash-message {
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.flash-message.success {
+    background-color: #28a745;
+}
+
+.flash-message.error {
+    background-color: #dc3545;
+}
+
+.flash-message.info {
+    background-color: #17a2b8;
+}
+
+.flash-message p {
+    margin: 0;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.management-options h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.management-options ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.management-options li {
+    margin: 15px 0;
+}
+
+.manage-link {
+    color: #333;
+    font-size: 1.2rem;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    max-width: 300px;
+    transition: all 0.3s ease;
+}
+
+.manage-link:hover {
+    background-color: #f39c12;
+    color: white;
+    border-color: #f39c12;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.manage-link i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/

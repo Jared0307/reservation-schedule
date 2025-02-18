@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es"><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+<head><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Gestión de Reservaciones</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles3.css') }}">
+</head>
+
+<body>
+    <div class="navbar"><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+        <a href="{{ url_for('calendar') }}">Calendario</a>
+        <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+    </div>
+
+    <header>
+        <h1>Sistema de Gestión de Reservaciones</h1>
+        <p>Bienvenido al sistema de gestión para reservar la sala de juntas.</p><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    </header>
+
+    <div class="content">
+        <h2>¿Qué es este sistema?</h2>
+        <p>Este sistema está diseñado para gestionar de manera eficiente las reservas de alguna sala de juntas o espacio en general. Permite a los usuarios reservar el lugar en fechas y horarios disponibles, así como ver las reservas
+            existentes.</p><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+        <h2>Características del sistema</h2>
+        <ul>
+            <li>Interfaz fácil de usar para reservar la sala.</li>
+            <li>Visualización de reservas aprobadas.</li>
+            <li>Cancelación y modificación de reservas (por parte de los administradores).</li>
+            <li>Notificaciones en tiempo real sobre el estado de las reservas.</li>
+        </ul><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+        <h2>¿Cómo funciona?</h2>
+        <p>El sistema permite a los usuarios seleccionar la fecha y la hora deseada para realizar una reserva. Una vez
+            realizada la reserva, el sistema la aprueba o rechaza dependiendo de la disponibilidad. Los administradores
+            tienen acceso a todas las reservas y pueden modificar o cancelar las existentes.</p>
+    </div>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    <footer>
+        <p>&copy; 2025 Sistema de Gestión de Reservaciones | Todos los derechos reservados</p>
+    </footer>
+
+</body>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+</html>

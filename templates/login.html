@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8"><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('login') }}">Inicio</a>
+    </div>>
+    <div class="container"><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+        <h2>Login</h2>
+        <form method="POST">
+            <label for="username">Usuario:</label>
+            <input type="text" id="username" name="username" required><br><br><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <button type="submit">Ingresar</button>
+        </form><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    </div>
+    <footer>
+        <p>© 2025 Sistema de Gestión de Reservas</p>
+    </footer>
+</body><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+</html><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->

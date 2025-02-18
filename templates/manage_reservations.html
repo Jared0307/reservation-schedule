@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Reservas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+
+<body><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+    <div class="navbar">
+        <a href="{{ url_for('admin') }}">Panel de Administrador</a>
+        <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+    </div>
+
+    <div class="container"><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+        <h1>Gestionar Reservas</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Fecha</th>
+                    <th>Hora</th>
+                    <th>Estado</th>
+                    <th>Aprobar</th>
+                    <th>Denegar</th><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                </tr>
+            </thead>
+            <tbody><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                {% for reservation in reservations %}
+                <tr>
+                    <td>{{ reservation.user.username }}</td>
+                    <td>{{ reservation.date }}</td>
+                    <td>{{ reservation.time }}</td>
+                    <td>
+                        {% if reservation.approved %}<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                        Aprobada
+                        {% else %}
+                        Pendiente<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if not reservation.approved %}
+                        <a href="{{ url_for('approve_reservation', id=reservation.id) }}"
+                            class="btn-approve">Aprobar</a>
+                        {% endif %}
+                    </td>
+                    <td>
+                        {% if not reservation.approved %}<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                        <a href="{{ url_for('deny_reservation', id=reservation.id) }}" class="btn-deny">Denegar</a>
+                        {% endif %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <h2>Reservas aprobadas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuario</th>
+                    <th>Fecha</th><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+                    <th>Hora</th>
+                    <th>Aprobada por</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for reservation in approved_today %}
+                <tr>
+                    <td>{{ reservation.user.username }}</td>
+                    <td>{{ reservation.date }}</td>
+                    <td>{{ reservation.time }}</td>
+                    <td>{{ reservation.approved_by.username if reservation.approved_by else 'No disponible' }}</td>
+                </tr>
+                {% endfor %}<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+            </tbody>
+        </table>
+
+
+        <br>
+        <a href="{{ url_for('admin') }}" class="btn-back">Volver al Panel de Administrador</a><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+    </div>
+    <footer>
+        <p>© 2025 Sistema de Gestión de Reservas</p>
+    </footer>
+</body><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+
+</html><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->

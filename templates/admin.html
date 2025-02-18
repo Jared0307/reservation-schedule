@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+<body>
+    <div class="navbar">
+        <a href="{{ url_for('admin') }}">Panel de Administrador</a>
+        <a href="{{ url_for('logout') }}">Cerrar sesión</a>
+    </div>
+    <div class="container">
+        <h1>Bienvenido al Panel de Administrador</h1>
+        <p>Desde aquí puedes gestionar las reservas, usuarios y más.</p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+        <ul>
+            {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+            {% endfor %}
+        </ul>
+        {% endif %}
+        {% endwith %}
+        <ul><!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->
+            <li><a href="/manage_reservations">Gestionar Reservas</a></li>
+            <li><a href="/create_user">Crear Usuario</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p>&copy; 2025 Fagor, Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>
+
+<!-- Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com -->

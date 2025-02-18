@@ -1,0 +1,113 @@
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: black;
+    line-height: 1.5;
+}
+
+.navbar {
+    background-color: red;
+    padding: 15px;
+    text-align: center;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+.navbar a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+header {
+    text-align: center;
+    padding: 30px;
+    background-color: black;
+    color: white;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 20px;
+}
+
+.content {
+    padding: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    font-size: 18px;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
+a:hover {
+    text-decoration: underline;
+}
+/* Hecho por Jared0307 jaredrodriguez0307@gmail.com jar3d.atwebpages.com*/
